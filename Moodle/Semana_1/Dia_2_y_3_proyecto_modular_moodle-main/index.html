@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EcoAura | Soluciones Sustentables</title>
+        <!-- Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Hoja de estilos externa con Variables CSS y rem -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+    <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+        <!-- Encabezado y Navegación -->
+        <header class="bg-emerald-700 text-white shadow-md sticky top-0 z-50">
+            <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold tracking-wide flex items-center gap-2">
+                    🌱 <span>EcoAura</span>
+                </a>
+                <nav aria-label="Navegación principal">
+                    <ul class="flex space-x-6 font-medium">
+                        <li><a href="index.html" class="text-amber-300 hover:text-white transition">Inicio</a></li>
+                        <li><a href="servicios.html" class="hover:text-amber-300 transition">Servicios</a></li>
+                        <li><a href="contacto.html" class="hover:text-amber-300 transition">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Contenido Principal -->
+        <main class="flex-grow">
+            <!-- Hero Section -->
+            <section class="bg-emerald-800 text-white py-20 px-4 text-center">
+                <div class="max-w-3xl mx-auto">
+                    <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Transformamos tus espacios en entornos sostenibles</h1>
+                    <p class="text-lg md:text-xl text-emerald-100 mb-8">Ofrecemos consultoría y productos ecológicos para el hogar y la empresa.</p>
+                    <a href="servicios.html" class="bg-amber-400 hover:bg-amber-500 text-emerald-950 font-bold py-3 px-6 rounded-lg transition shadow-lg inline-block">
+                        Ver Catálogo
+                    </a>
+                </div>
+            </section>
+
+            <!-- Presentación del Negocio -->
+            <section class="py-16 container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl font-bold text-emerald-900 mb-6">¿Quiénes Somos?</h2>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                        En <strong>EcoAura</strong> nos dedicamos a integrar la sustentabilidad en tu día a día. Nuestro equipo de consultores y diseñadores trabaja para reducir la huella de carbono de hogares y pequeños negocios mediante productos eco-amigables y asesoría energética personalizada.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Destacados -->
+            <section class="bg-gray-100 py-16">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-3xl font-bold text-center text-emerald-900 mb-10">Nuestros Pilares</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <article class="bg-white p-6 rounded-xl shadow-md border border-gray-200 text-center">
+                            <div class="text-4xl mb-4">☀️</div>
+                            <h3 class="text-xl font-bold mb-2 text-emerald-800">Energía Limpia</h3>
+                            <p class="text-gray-600">Optimizamos tu consumo e instalamos paneles solares de alta eficiencia.</p>
+                        </article>
+                        <article class="bg-white p-6 rounded-xl shadow-md border border-gray-200 text-center">
+                            <div class="text-4xl mb-4">♻️</div>
+                            <h3 class="text-xl font-bold mb-2 text-emerald-800">Cero Residuos</h3>
+                            <p class="text-gray-600">Implementamos programas de compostaje y reciclaje adaptados a tu espacio.</p>
+                        </article>
+                        <article class="bg-white p-6 rounded-xl shadow-md border border-gray-200 text-center">
+                            <div class="text-4xl mb-4">🌿</div>
+                            <h3 class="text-xl font-bold mb-2 text-emerald-800">Diseño Biofílico</h3>
+                            <p class="text-gray-600">Integramos plantas y luz natural para mejorar la salud y productividad.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Pie de página -->
+        <footer class="bg-gray-900 text-gray-400 py-6 text-center">
+            <div class="container mx-auto px-4">
+                <p>&copy; 2026 EcoAura. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+
+    </body>
+</html>

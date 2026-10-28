@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Servicios | EcoAura</title>
+        <!-- Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+        <!-- Encabezado y Navegación -->
+        <header class="bg-emerald-700 text-white shadow-md sticky top-0 z-50">
+            <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold tracking-wide flex items-center gap-2">
+                    🌱 <span>EcoAura</span>
+                </a>
+                <nav aria-label="Navegación principal">
+                    <ul class="flex space-x-6 font-medium">
+                        <li><a href="index.html" class="hover:text-amber-300 transition">Inicio</a></li>
+                        <li><a href="servicios.html" class="text-amber-300 hover:text-white transition">Servicios</a></li>
+                        <li><a href="contacto.html" class="hover:text-amber-300 transition">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Contenido Principal -->
+        <main class="flex-grow container mx-auto px-4 py-12">
+            <header class="text-center mb-12">
+                <h1 class="text-4xl font-extrabold text-emerald-900 mb-4">Catálogo de Servicios</h1>
+                <p class="text-lg text-gray-600">Soluciones a la medida de tus necesidades ambientales.</p>
+            </header>
+
+            <!-- Rejilla de Servicios -->
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Servicio 1 -->
+                <article class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200 flex flex-col">
+                    <div class="p-6 flex-grow">
+                        <span class="text-xs font-semibold uppercase tracking-wider bg-emerald-100 text-emerald-800 py-1 px-3 rounded-full">Hogar</span>
+                        <h2 class="text-2xl font-bold text-gray-900 mt-3 mb-2">Auditoría Energética Residencial</h2>
+                        <p class="text-gray-600 mb-4">Analizamos tus consumos de energía y agua para reducir tu factura hasta en un 40%.</p>
+                        <p class="text-emerald-700 font-bold text-xl">$120 USD</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 border-t border-gray-100">
+                        <a href="contacto.html" class="block text-center bg-emerald-700 hover:bg-emerald-800 text-white font-medium py-2 px-4 rounded transition">Solicitar Información</a>
+                    </div>
+                </article>
+
+                <!-- Servicio 2 -->
+                <article class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200 flex flex-col">
+                    <div class="p-6 flex-grow">
+                        <span class="text-xs font-semibold uppercase tracking-wider bg-amber-100 text-amber-800 py-1 px-3 rounded-full">Empresas</span>
+                        <h2 class="text-2xl font-bold text-gray-900 mt-3 mb-2">Instalación de Paneles Solares</h2>
+                        <p class="text-gray-600 mb-4">Diseño, montaje y mantenimiento de sistemas fotovoltaicos para pequeñas y medianas empresas.</p>
+                        <p class="text-emerald-700 font-bold text-xl">Cotización a medida</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 border-t border-gray-100">
+                        <a href="contacto.html" class="block text-center bg-emerald-700 hover:bg-emerald-800 text-white font-medium py-2 px-4 rounded transition">Cotizar Proyecto</a>
+                    </div>
+                </article>
+
+                <!-- Servicio 3 -->
+                <article class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200 flex flex-col">
+                    <div class="p-6 flex-grow">
+                        <span class="text-xs font-semibold uppercase tracking-wider bg-emerald-100 text-emerald-800 py-1 px-3 rounded-full">Hogar & Oficina</span>
+                        <h2 class="text-2xl font-bold text-gray-900 mt-3 mb-2">Diseño de Jardines Urbanos</h2>
+                        <p class="text-gray-600 mb-4">Creación de huertos orgánicos y muros verdes interiores con sistema de riego automatizado.</p>
+                        <p class="text-emerald-700 font-bold text-xl">Desde $250 USD</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 border-t border-gray-100">
+                        <a href="contacto.html" class="block text-center bg-emerald-700 hover:bg-emerald-800 text-white font-medium py-2 px-4 rounded transition">Solicitar Información</a>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <!-- Pie de página -->
+        <footer class="bg-gray-900 text-gray-400 py-6 text-center">
+            <div class="container mx-auto px-4">
+                <p>&copy; 2026 EcoAura. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+
+    </body>
+</html>

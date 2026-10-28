@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rueda Libre | Reservas y Alquiler</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body>
+        <header>
+            <a class="site-brand" href="../index.html">Rueda Libre</a>
+            <nav class="navegacion" aria-label="Navegación principal">
+                <ul>
+                    <li class="nav-item"><a href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a href="horario.html">Horario</a></li>
+                    <li class="nav-item"><a href="recorridos.html">Recorridos</a></li>
+                    <li class="nav-item"><a href="tarifas.html">Tarifas</a></li>
+                    <li class="nav-item"><a href="reserva.html" class="activo">Reservas</a></li>
+                    <li class="nav-item">
+                        <select name="menu" id="menu-select" aria-label="Menú de páginas" onchange="if (this.value) window.location.href = this.value">
+                            <option value="">Menú</option>
+                            <option value="catalogo.html">Bicicletas</option>
+                            <option value="reparar.html">Reparar</option>
+                            <option value="nosotros.html">Nosotros</option>
+                            <option value="localizanos.html">Localízanos</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main class="contenido-pagina">
+            <section id="reservas">
+                <div class="reservas_titulo" style="text-align: center; margin-bottom: 2rem;">
+                    <h2>Reserva tu bicicleta</h2>
+                    <p class="descripcion-seccion">Completa los datos para solicitar tu reserva con Rueda Libre en Medellín.</p>
+                </div>
+
+                <!-- Carrusel de bicicletas disponibles -->
+                <section class="bike-carousel-section bike-carousel-section--reservation" aria-labelledby="bicicletas-reserva-titulo" style="margin-bottom: 2.5rem;">
+                    <h2 id="bicicletas-reserva-titulo" style="font-size: 1.3rem; margin-bottom: 1rem; color: var(--azul-noche);">Bicicletas disponibles por hora</h2>
+                    <div class="bike-carousel" aria-label="Carrusel de bicicletas disponibles">
+                        <div class="bike-carousel__track">
+                            <div class="bike-carousel__group">
+                                <article class="bike-card">
+                                    <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=600&q=80" alt="Bicicleta urbana para alquiler">
+                                    <div class="bike-card__details"><span>Urbana</span><h3>Urbana clásica</h3><small class="bike-card__reference">Ref: URB-001</small><p><strong>$10.000 COP</strong> / hora</p></div>
+                                </article>
+                                <article class="bike-card">
+                                    <img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=600&q=80" alt="Bicicleta urbana de paseo">
+                                    <div class="bike-card__details"><span>Urbana</span><h3>Urbana cómoda</h3><small class="bike-card__reference">Ref: URB-002</small><p><strong>$10.000 COP</strong> / hora</p></div>
+                                </article>
+                                <article class="bike-card">
+                                    <img src="https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?auto=format&fit=crop&w=600&q=80" alt="Bicicleta de montaña con suspensión">
+                                    <div class="bike-card__details"><span>Montaña</span><h3>Montaña trail</h3><small class="bike-card__reference">Ref: MON-001</small><p><strong>$15.000 COP</strong> / hora</p></div>
+                                </article>
+                                <article class="bike-card">
+                                    <img src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=600&q=80" alt="Bicicleta para recorridos de montaña">
+                                    <div class="bike-card__details"><span>Montaña</span><h3>Montaña doble suspensión</h3><small class="bike-card__reference">Ref: MON-002</small><p><strong>$15.000 COP</strong> / hora</p></div>
+                                </article>
+                                <article class="bike-card">
+                                    <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=600&q=80" alt="Bicicleta eléctrica para ciudad">
+                                    <div class="bike-card__details"><span>Eléctrica</span><h3>Eléctrica urbana</h3><small class="bike-card__reference">Ref: ELE-001</small><p><strong>$25.000 COP</strong> / hora</p></div>
+                                </article>
+                                <article class="bike-card">
+                                    <img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=600&q=80" alt="Bicicleta eléctrica para rutas">
+                                    <div class="bike-card__details"><span>Eléctrica</span><h3>Eléctrica de montaña</h3><small class="bike-card__reference">Ref: ELE-002</small><p><strong>$25.000 COP</strong> / hora</p></div>
+                                </article>
+                            </div>
+                            <div class="bike-carousel__group" aria-hidden="true">
+                                <article class="bike-card">
+                                    <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=600&q=80" alt="">
+                                    <div class="bike-card__details"><span>Urbana</span><h3>Urbana clásica</h3><small class="bike-card__reference">Ref: URB-001</small><p><strong>$10.000 COP</strong> / hora</p></div>
+                                </article>
+                                <article class="bike-card">
+                                    <img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=600&q=80" alt="">
+                                    <div class="bike-card__details"><span>Urbana</span><h3>Urbana cómoda</h3><small class="bike-card__reference">Ref: URB-002</small><p><strong>$10.000 COP</strong> / hora</p></div>
+                                </article>
+                                <article class="bike-card">
+                                    <img src="https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?auto=format&fit=crop&w=600&q=80" alt="">
+                                    <div class="bike-card__details"><span>Montaña</span><h3>Montaña trail</h3><small class="bike-card__reference">Ref: MON-001</small><p><strong>$15.000 COP</strong> / hora</p></div>
+                                </article>
+                                <article class="bike-card">
+                                    <img src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=600&q=80" alt="">
+                                    <div class="bike-card__details"><span>Montaña</span><h3>Montaña doble suspensión</h3><small class="bike-card__reference">Ref: MON-002</small><p><strong>$15.000 COP</strong> / hora</p></div>
+                                </article>
+                                <article class="bike-card">
+                                    <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=600&q=80" alt="">
+                                    <div class="bike-card__details"><span>Eléctrica</span><h3>Eléctrica urbana</h3><small class="bike-card__reference">Ref: ELE-001</small><p><strong>$25.000 COP</strong> / hora</p></div>
+                                </article>
+                                <article class="bike-card">
+                                    <img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=600&q=80" alt="">
+                                    <div class="bike-card__details"><span>Eléctrica</span><h3>Eléctrica de montaña</h3><small class="bike-card__reference">Ref: ELE-002</small><p><strong>$25.000 COP</strong> / hora</p></div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Formulario de reserva -->
+                <form action="#" method="get" id="formulario_reserva">
+                    <div class="reservas_contenido">
+                        <fieldset class="tarjeta_reserva">
+                            <legend>Datos personales</legend>
+
+                            <div class="campo">
+                                <label for="nombre">Nombre completo <span>*</span></label>
+                                <input
+                                    type="text"
+                                    id="nombre"
+                                    name="nombre"
+                                    placeholder="Ingresa tu nombre completo"
+                                    minlength="3"
+                                    maxlength="80"
+                                    pattern="[A-Za-zÁÉÍÓÚáéíóúÜüÑñ]+([ '-][A-Za-zÁÉÍÓÚáéíóúÜüÑñ]+)*"
+                                    title="Ingresa un nombre de mínimo 3 caracteres, sin números."
+                                    required
+                                >
+                                <small>Mínimo 3 caracteres. No se permiten números.</small>
+                            </div>
+
+                            <div class="campo">
+                                <label for="documento">Número de documento <span>*</span></label>
+                                <input
+                                    type="text"
+                                    id="documento"
+                                    name="documento"
+                                    placeholder="Ej. 1234567890"
+                                    minlength="6"
+                                    maxlength="10"
+                                    pattern="[0-9]{6,10}"
+                                    title="Ingresa entre 6 y 10 dígitos."
+                                    inputmode="numeric"
+                                    required
+                                >
+                                <small>Entre 6 y 10 dígitos, sin letras.</small>
+                            </div>
+
+                            <div class="campo">
+                                <label for="correo">Correo electrónico <span>*</span></label>
+                                <input
+                                    type="email"
+                                    id="correo"
+                                    name="correo"
+                                    placeholder="correo@ejemplo.com"
+                                    maxlength="100"
+                                    required
+                                >
+                            </div>
+
+                            <div class="campo">
+                                <label for="celular">Celular <span>*</span></label>
+                                <input
+                                    type="tel"
+                                    id="celular"
+                                    name="celular"
+                                    placeholder="3001234567"
+                                    pattern="3[0-9]{9}"
+                                    title="Ingresa 10 dígitos y comienza por 3."
+                                    inputmode="numeric"
+                                    required
+                                >
+                                <small>10 dígitos y debe comenzar por 3.</small>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="tarjeta_reserva">
+                            <legend>Detalles de la reserva</legend>
+
+                            <div class="campo">
+                                <label for="fecha">Fecha de reserva <span>*</span></label>
+                                <input
+                                    type="date"
+                                    id="fecha"
+                                    name="fecha"
+                                    min="2026-11-01"
+                                    max="2026-12-31"
+                                    required
+                                >
+                                <small>Del 1 de noviembre al 31 de diciembre de 2026.</small>
+                            </div>
+
+                            <div class="campo">
+                                <label for="referencia_bicicleta">Referencia de bicicleta <span>*</span></label>
+                                <input
+                                    type="text"
+                                    id="referencia_bicicleta"
+                                    name="referencia_bicicleta"
+                                    list="referencias-bicicleta"
+                                    placeholder="Ej. URB-001"
+                                    pattern="(URB|MON|ELE)-00[12]"
+                                    title="Elige una referencia válida del carrusel."
+                                    maxlength="7"
+                                    required
+                                >
+                                <datalist id="referencias-bicicleta">
+                                    <option value="URB-001"></option>
+                                    <option value="URB-002"></option>
+                                    <option value="MON-001"></option>
+                                    <option value="MON-002"></option>
+                                    <option value="ELE-001"></option>
+                                    <option value="ELE-002"></option>
+                                </datalist>
+                                <small>Usa la referencia que aparece en la tarjeta elegida.</small>
+                            </div>
+
+                            <div class="campo">
+                                <span class="etiqueta">Tipo de bicicleta <span>*</span></span>
+                                <div class="opciones_bicicleta">
+                                    <label class="opcion_tarjeta">
+                                        <input type="radio" name="bicicleta" value="urbana" required>
+                                        <span class="opcion_icono">🚲</span>
+                                        <span>Urbana</span>
+                                    </label>
+                                    <label class="opcion_tarjeta">
+                                        <input type="radio" name="bicicleta" value="montana">
+                                        <span class="opcion_icono">⛰</span>
+                                        <span>Montaña</span>
+                                    </label>
+                                    <label class="opcion_tarjeta">
+                                        <input type="radio" name="bicicleta" value="electrica">
+                                        <span class="opcion_icono">ϟ</span>
+                                        <span>Eléctrica</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="campo">
+                                <span class="etiqueta">Plan de alquiler <span>*</span></span>
+                                <div class="opciones_plan">
+                                    <label class="opcion_tarjeta">
+                                        <input type="radio" name="plan" value="hora" required>
+                                        <span class="opcion_icono">◷</span>
+                                        <span>Por hora</span>
+                                    </label>
+                                    <label class="opcion_tarjeta">
+                                        <input type="radio" name="plan" value="cuatro_horas">
+                                        <span class="opcion_icono">◷</span>
+                                        <span>4 horas</span>
+                                    </label>
+                                    <label class="opcion_tarjeta">
+                                        <input type="radio" name="plan" value="dia_completo">
+                                        <span class="opcion_icono">▣</span>
+                                        <span>Día completo</span>
+                                    </label>
+                                    <label class="opcion_tarjeta">
+                                        <input type="radio" name="plan" value="recorrido_guiado">
+                                        <span class="opcion_icono">⌁</span>
+                                        <span>Recorrido guiado</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="campo">
+                                <label for="cantidad">Cantidad de bicicletas <span>*</span></label>
+                                <select id="cantidad" name="cantidad" required>
+                                    <option value="1">1 bicicleta</option>
+                                    <option value="2">2 bicicletas</option>
+                                    <option value="3">3 bicicletas</option>
+                                    <option value="4">4 bicicletas</option>
+                                    <option value="5">5 bicicletas</option>
+                                    <option value="6">6 bicicletas</option>
+                                </select>
+                            </div>
+
+                            <div class="campo">
+                                <label for="comentarios">Comentarios <span class="opcional">(opcional)</span></label>
+                                <textarea
+                                    id="comentarios"
+                                    name="comentarios"
+                                    rows="3"
+                                    maxlength="300"
+                                    placeholder="¿Tienes alguna solicitud especial?"
+                                ></textarea>
+                                <small class="contador">Máximo 300 caracteres.</small>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div class="reservas_acciones" style="margin-top: 1.5rem; text-align: center;">
+                        <div class="aceptar_politicas" style="margin-bottom: 1rem;">
+                            <input
+                                type="checkbox"
+                                id="politicas"
+                                name="politicas"
+                                value="aceptadas"
+                                required
+                            >
+                            <label for="politicas">
+                                Acepto las <a href="#politicas-reserva">políticas de reserva y alquiler</a>.
+                                <span>*</span>
+                            </label>
+                        </div>
+
+                        <div class="botones_reserva" style="display: flex; gap: 1rem; justify-content: center;">
+                            <button type="submit" class="boton-principal">
+                                Enviar reserva <span aria-hidden="true">→</span>
+                            </button>
+                            <button type="reset" class="boton-enlace" style="background: var(--gris-asfalto);">
+                                Limpiar formulario
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Sección de Contacto y Horarios integrada -->
+            <section id="contacto_reservas" style="margin-top: 3rem;">
+                <h2>Datos de contacto y horario</h2>
+                <div class="tabla-contenedor">
+                    <table>
+                        <caption>Información de atención de Rueda Libre</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Información</th>
+                                <th scope="col">Detalles</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Correo de contacto</th>
+                                <td>
+                                    <a href="mailto:hola@ruedalibre.example" style="color: var(--verde-ruta); font-weight: bold;">
+                                        hola@ruedalibre.example
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Lunes a viernes</th>
+                                <td>7:00 a. m. a 7:00 p. m.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Sábados, domingos y festivos</th>
+                                <td>6:00 a. m. a 2:00 p. m.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <!-- Botón Flotante de WhatsApp Obligatorio -->
+        <a href="https://wa.me/573000000000" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Contacto de WhatsApp">
+            WhatsApp
+        </a>
+
+        <footer class="site-footer">
+            <section class="footer-about">
+                <h2>Ubicación</h2>
+                <p>Rueda Libre, Medellín, Colombia. <a href="localizanos.html">Consulta cómo llegar</a> o escríbenos a <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a>.</p>
+            </section>
+            <nav class="social-nav" aria-label="Redes sociales">
+                <ul class="social-list">
+                    <li>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-btn facebook" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn instagram" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.79-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-btn tiktok" aria-label="TikTok">
+                            <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>

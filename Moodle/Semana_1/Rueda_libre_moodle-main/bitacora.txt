@@ -1,0 +1,51 @@
+===============================================================================
+BITÁCORA DE DESARROLLO Y AUDITORÍA - PROYECTO RUEDA LIBRE (V1.0 / V1.5)
+===============================================================================
+
+PROYECTO: Rueda Libre - Sistema Web de Alquiler de Bicicletas y Recorridos Guiados
+CIUDAD: Medellín, Colombia
+ESTÁNDAR DE ENFOQUE: HTML5 Semántico, CSS3 Flexbox/Grid, Accesibilidad WCAG 2.1 y Responsive Design.
+
+-------------------------------------------------------------------------------
+1. REGISTRO DE REVISIÓN Y CORRECCIONES POR ARCHIVO
+-------------------------------------------------------------------------------
+
+[RAÍZ / INDEX.HTML]
+- Corrección de semántica HTML: inclusión de h1 único en el banner hero.
+- Corrección de rutas relativas de hojas de estilo (css/styles.css) e imágenes.
+- Implementación de tarjetas de servicios sobrepuestas mediante CSS Grid.
+- Inclusión del botón flotante de WhatsApp obligatorio.
+
+[PÁGINAS INTERNAS / PAGINAS/]
+- horario.html: 
+  * Estandarización de tablas semánticas con captions, thead, tbody, th scope="col" y scope="row".
+  * Inclusión de lista de definición (dl, dt, dd) para los tipos de servicio.
+- catalogo.html: 
+  * Implementación del carrusel continuo en CSS con @keyframes.
+  * Corrección de tarjetas de bicicletas con referencias oficiales (URB-001, MON-001, ELE-001, etc.).
+- localizanos.html:
+  * Integración de mapa interactivo/responsive de Google Maps en Medellín.
+  * Estructuración de datos de ubicación, transporte público y canales de atención.
+- tarifas.html:
+  * Creación de tablas comparativas de precios de alquiler (1h, 4h, Día Completo) y recorridos guiados.
+- nosotros.html:
+  * Redacción institucional y visualización de valores principales y visión de movilidad sostenible.
+- reparar.html:
+  * Maquetación del flujo de trabajo del taller de mantenimiento y lista de servicios de reparación.
+- recorridos.html:
+  * Presentación de rutas oficiales (Río y Parques, Sabores de Barrio, Reto Las Palmas) con distancia, duración y nivel de dificultad.
+- reserva.html:
+  * Rediseño completo del formulario estructurado mediante fieldset, legend y labels.
+  * Integración de validaciones HTML5 (patterns para documento, celular, expresiones regulares y fechas).
+  * Inclusión de tarjetas interactivas de selección tipo radio para tipo de bicicleta y plan de alquiler.
+
+-------------------------------------------------------------------------------
+2. OPTIMIZACIÓN Y ADAPTABILIDAD RESPONSIVE (CSS3)
+-------------------------------------------------------------------------------
+
+- Definición de paleta de colores Riwi mediante variables CSS (--verde-ruta: #1E7A4F, --naranja-pedal: #F39A2B, --azul-noche: #14213D, --crema: #FAF6EF, --gris-asfalto: #5B6470).
+- Carga de tipografías institucionales Montserrat (Títulos) y Open Sans (Cuerpo de texto).
+- Ajustes Responsive en Media Queries (max-width: 768px y max-width: 480px / 320px):
+  * Solución a desbordamientos horizontales mediante overflow-x: hidden en body y min-width en tablas dentro de contenedores con scroll táctil (-webkit-overflow-scrolling: touch).
+  * Adaptación de formularios y grids a 1 columna (1fr) con box-sizing: border-box para prevenir salidas de pantalla en dispositivos móviles estrechos (320px).
+===============================================================================

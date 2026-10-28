@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto | EcoAura</title>
+        <!-- Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+        <!-- Encabezado y Navegación -->
+        <header class="bg-emerald-700 text-white shadow-md sticky top-0 z-50">
+            <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold tracking-wide flex items-center gap-2">
+                    🌱 <span>EcoAura</span>
+                </a>
+                <nav aria-label="Navegación principal">
+                    <ul class="flex space-x-6 font-medium">
+                        <li><a href="index.html" class="hover:text-amber-300 transition">Inicio</a></li>
+                        <li><a href="servicios.html" class="hover:text-amber-300 transition">Servicios</a></li>
+                        <li><a href="contacto.html" class="text-amber-300 hover:text-white transition">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Contenido Principal -->
+        <main class="flex-grow container mx-auto px-4 py-12 max-w-2xl">
+            <section class="bg-white p-8 rounded-xl shadow-md border border-gray-200">
+                <h1 class="text-3xl font-extrabold text-emerald-900 mb-2 text-center">Contáctanos</h1>
+                <p class="text-gray-600 mb-8 text-center">Déjanos tu mensaje y un asesor se pondrá en contacto contigo a la brevedad.</p>
+
+                <form action="#" method="POST" class="space-y-6">
+                    <!-- Nombre Completo -->
+                    <div>
+                        <label for="nombre" class="block text-sm font-medium text-gray-700 mb-1">Nombre Completo *</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ej. Ana García"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition">
+                    </div>
+
+                    <!-- Correo Electrónico -->
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Correo Electrónico *</label>
+                        <input type="email" id="email" name="email" required placeholder="tu@email.com"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition">
+                    </div>
+
+                    <!-- Teléfono (Opcional) -->
+                    <div>
+                        <label for="telefono" class="block text-sm font-medium text-gray-700 mb-1">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+1 234 567 890"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition">
+                    </div>
+
+                    <!-- Servicio de Interés -->
+                    <div>
+                        <label for="servicio" class="block text-sm font-medium text-gray-700 mb-1">Servicio de Interés *</label>
+                        <select id="servicio" name="servicio" required
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition">
+                            <option value="">Selecciona un servicio</option>
+                            <option value="auditoria">Auditoría Energética Residencial</option>
+                            <option value="paneles">Instalación de Paneles Solares</option>
+                            <option value="jardines">Diseño de Jardines Urbanos</option>
+                            <option value="otro">Otro / Consulta General</option>
+                        </select>
+                    </div>
+
+                    <!-- Mensaje -->
+                    <div>
+                        <label for="mensaje" class="block text-sm font-medium text-gray-700 mb-1">Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe aquí los detalles de tu consulta..."
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"></textarea>
+                    </div>
+
+                    <!-- Botón de Envío -->
+                    <button type="submit" 
+                            class="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-3 px-6 rounded-lg transition shadow-md">
+                        Enviar Mensaje
+                    </button>
+                </form>
+            </section>
+        </main>
+
+        <!-- Pie de página -->
+        <footer class="bg-gray-900 text-gray-400 py-6 text-center">
+            <div class="container mx-auto px-4">
+                <p>&copy; 2026 EcoAura. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+
+    </body>
+</html>
